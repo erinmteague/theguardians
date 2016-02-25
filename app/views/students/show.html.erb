@@ -1,5 +1,20 @@
-<h1>Students#show</h1>
-<p>Find me in app/views/students/show.html.erb</p>
+<div id="left-col">
+	<h1 class="welcome">Welcome, </h1>
+	<h1 class="wel-name"><%= @student.fname + " " + @student.lname %></h1>
+	<div id="imghldr"></div>
+	<h3><%= @student.grade%></h3>
+	<h3>Ms. <%= @student.teacher.lname%></h3>
+</div>
 
-<h2><%= @student.fname + " " + @student.lname %></h2>
-<%= link_to "Edit", edit_student_path(@student.id) %>
+<div id="right-col">
+	<div id="btnbox">
+		<div class="lesson-btn">
+				<%= link_to "Start a New Adventure", lessons_path, :class => "link" %>
+		</div>
+	</div>
+	<h1 id="classhdr">Completed Adventures:</h1>
+		
+	
+	
+	
+</div>

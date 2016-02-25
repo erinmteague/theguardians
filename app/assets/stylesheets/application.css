@@ -86,9 +86,36 @@ footer {
 }
 .main_container2 {
 	width: 102%;
-	height: 788px;
+	height: 778px;
 	background: url('/assets/paper2.jpg') center fixed;
 	background-size: cover;
-	margin-bottom: -21px;
+	top: 14%;
 	margin-left: -10px;
  }
+ .dropdown{
+ 		width: 55px;
+ 		height: 50px;
+ 		background: #6DF5FF url('/assets/menu.png') no-repeat center;
+ 		margin-left: 80%;
+ 		margin-top: 8%;
+ }
+ .dropdown-content{
+ 	position: fixed;
+ 	top: 11%;
+ 	right: 1%;
+ 	width: 9%;
+ 	height: 50px;
+ 	background-color: #1CDB7F;
+ 	margin-left: 76%;
+ 	display: none;
+ 	text-align: center;
+ }
+ .sgnout{
+ 	text-decoration: none;
+ 	color: white;
+ 	font-family: Garamond;
+ 	font-size: 18px;
+ 	font-weight: 800;
+ 	padding-top: 5%;
+ }
+ 

@@ -9,18 +9,20 @@
 </div>
 
 <div id="right-col">
-<h1 id="classhdr">My Classrooms:</h1>
-<ul>
-<% @classrooms.each do |classroom| %>
- 		<li id="classlist">
- 			<%= link_to "#{classroom.name}", teacher_classroom_path(@teacher.id, classroom), :class => "classname" %><br>
+	<h1 id="classhdr">My Classrooms:</h1>
+	<ul>
+		<% @classrooms.each do |classroom| %>
+ 			<li id="classlist">
+ 				<%= link_to "#{classroom.name}", teacher_classroom_path(@teacher.id, classroom), :class => "classname" %><br>
  		</li>
-<% end %>
-</ul>
-<div class="lesson-btn">
-	<%= link_to "Add New Class", new_teacher_classroom_path(@teacher, @classroom), :class => "link"%>
-</div>
-<div class="lesson-btn">
-<%= link_to "Lessons", lessons_path, :class => "link" %>
-</div>
+		<% end %>
+	</ul>
+	<div id="btnbox">
+		<div class="lesson-btn">
+			<%= link_to "Add New Class", new_teacher_classroom_path(@teacher, @classroom), :class => "link"%>
+		</div>
+		<div class="lesson-btn">
+			<%= link_to "Lessons", lessons_path, :class => "link" %>
+		</div>
+	</div>
 </div>

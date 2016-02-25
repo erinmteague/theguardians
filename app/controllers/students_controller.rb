@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   # Find Teacher and Classroom by id params, before completing all actions except for edit and update
-  before_action :SetTeacherAndClassroom, except: [:edit, :update]
+  before_action :SetTeacherAndClassroom, except: [:edit, :update, :show]
 
   # Students can only be managed by Teachers
   def new
@@ -21,11 +21,13 @@ class StudentsController < ApplicationController
 
   def show
   	@student = Student.find(params[:id])
+    render :layout => 'app2'
   end
 
   def edit
     @student = Student.find(params[:id])
     @teacher = current_teacher
+    render :layout => 'app2'
   end
 
   # Update the Student model attibutes of this student which belongs to this teacher and then redirect to the Teacher#Show page

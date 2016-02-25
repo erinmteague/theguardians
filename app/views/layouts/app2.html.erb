@@ -19,17 +19,21 @@
 				<% end %>
 		</div>
 		<div id="rightnav">
-				<div class="dropdown">
+				<div class="dropdown"></div>
   				<div class="dropdown-content">
-						<%= link_to "Sign Out", logout_path if @current_student || @current_teacher %>
-						</div>
-				</div>
+  					<% if @current_teacher %>
+							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
+						<% else %>				
+							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
+						<% end %>
+				
+					</div>
 		</div>
 	</nav>
 	<%= flash[:success] if flash[:success] %>
 	<%= flash[:fail] if flash[:fail] %>
 	<div class="main_container2">
-		<%= yield %>
+		<%= yield %>f
 	</div>
 	<footer class="footer">
 		<p id="cpyrt">Copyright Erin Teague 2016</p>

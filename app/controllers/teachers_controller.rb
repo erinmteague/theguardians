@@ -1,4 +1,5 @@
 class TeachersController < ApplicationController
+
   def index
     @teachers = Teacher.all
   end
@@ -29,6 +30,7 @@ class TeachersController < ApplicationController
 
   def edit
     @teacher = current_teacher
+    render :layout => 'app2'
   end
 
   # Edit the attribute values associated with this Teacher and redirect to Teacher#Show page if successful
@@ -58,6 +60,10 @@ class TeachersController < ApplicationController
   # Defines allowable parameters for the Teacher model
   def teacher_params
   	params.require(:teacher).permit(:fname, :lname, :email, :password, :school, :grade)
+  end
+
+  def app2
+    render :layout => 'app2'
   end
 end
 

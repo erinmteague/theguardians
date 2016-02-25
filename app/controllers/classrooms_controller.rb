@@ -1,7 +1,7 @@
 class ClassroomsController < ApplicationController
   # Find Teacher by id params, before completing any actions
 	before_action :SetTeacher
-
+  layout 'app2'
   def index
   	@classrooms = Classroom.all
   end
