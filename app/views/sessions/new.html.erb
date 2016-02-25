@@ -1,0 +1,17 @@
+<div id="tea_sgin">
+	<h2 class="sgin">Teachers</h2>
+	<%= form_tag signin_path, :class => "sgin-form" do %>
+		<%= text_field_tag :email, nil, placeholder: "Email", :class => "form-field" %>
+		<%= password_field_tag :password, nil, placeholder: "Password", :class => "form-field" %>
+		<%= submit_tag "Sign In", :class => "form-btn"%>
+	<% end %>
+</div>
+
+<div id="stu_sgin">
+	<h2 class="sgin">Students</h2>
+	<%= form_tag signin_path, :class => "sgin-form" do %>
+		<%= text_field_tag :username, nil, placeholder: "Username", :class => "form-field" %>
+		<%= password_field_tag :password, nil, placeholder: "Password", :class => "form-field" %>
+		<%= submit_tag "Sign In", :class => "form-btn"%>
+	<% end %>
+</div>

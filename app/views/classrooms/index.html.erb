@@ -1,0 +1,12 @@
+<h1>Classrooms#index</h1>
+<p>Find me in app/views/classrooms/index.html.erb</p>
+
+ <% @classrooms.each do |classroom| %>
+ 	<% if classroom.name == nil %>
+ 		<h2> Nil </h2>
+ 	<% else %>
+ 		<h4><%= link_to "#{classroom.name}", teacher_classroom_path(@teacher.id, classroom) %></h4>
+ 	<% end %>
+ <% end %>
+
+<%= link_to "Add Class", new_teacher_classroom_path %>

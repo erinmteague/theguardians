@@ -1,0 +1,26 @@
+<div id="left-col">
+	<h1 class="welcome">Welcome, </h1>
+	<h1 class="wel-name"><%= @teacher.fname + " " + @teacher.lname %></h1>
+	<div id="imghldr"></div>
+	<h3>Email: <%= @teacher.email%></h3>
+	<h3>School: <%= @teacher.school%></h3>
+	<h3><%= @teacher.grade%></h3>
+	<%= link_to "Edit", edit_teacher_path(@teacher.id) %>
+</div>
+
+<div id="right-col">
+<h1 id="classhdr">My Classrooms:</h1>
+<ul>
+<% @classrooms.each do |classroom| %>
+ 		<li id="classlist">
+ 			<%= link_to "#{classroom.name}", teacher_classroom_path(@teacher.id, classroom), :class => "classname" %><br>
+ 		</li>
+<% end %>
+</ul>
+<div class="lesson-btn">
+	<%= link_to "Add New Class", new_teacher_classroom_path(@teacher, @classroom), :class => "link"%>
+</div>
+<div class="lesson-btn">
+<%= link_to "Lessons", lessons_path, :class => "link" %>
+</div>
+</div>

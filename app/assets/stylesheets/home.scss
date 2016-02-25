@@ -1,0 +1,79 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$logofont: 'Trade Winds', cursive;
+$df-font: 'ABeeZee', sans-serif;
+$silly-font: 'Schoolbell', cursive;
+$tan: #C4B88F;
+$lt-grn: #CFEA96;
+$hlite: #FFFEF7;
+$drk-grn: #383F35;
+$pop: #6DF5FF;
+
+.getstarted{
+	text-align: right;
+	color: white;
+	text-shadow: 1px 1px #CDFF51,
+		1px -1px #CDFF51,
+		-1px 1px #CDFF51,
+		-1px -1px #CDFF51;
+	text-shadow: 2px 2px #96BA3B,
+		2px -2px #96BA3B,
+		-2px 2px #96BA3B,
+		-2px -2px #96BA3B;
+	font-family: $df-font;
+	text-decoration: none;
+	font-size: 50px;
+	padding-top: 2%;
+	margin: 0 0 0	33%;
+	position: fixed;
+}
+#chico{
+position: absolute;
+background: transparent;
+z-index: 1;
+margin-left: -27%;
+margin-top: 18%;
+width: 12%;
+}
+#wangari{
+position: absolute;
+background: transparent;
+z-index: 2;
+margin-left: -51%;
+margin-top: 12%;
+width: 15%;
+}
+#jaques{
+position: absolute;
+background: transparent;
+margin-top: 18%;
+margin-left: -37%;
+z-index: 4;
+width: 15%;
+}
+.earth{
+position: absolute;
+background: transparent;
+z-index: 0;
+margin-top: 8%;
+margin-left: -20%;
+width: 25%;
+opacity: 0.6;
+}
+#rachel{
+position: absolute;
+background: transparent;
+margin-left: 2%;
+margin-top: 14%;
+z-index: 3;
+width: 13%;
+}
+#teddy{
+position: absolute;
+background: transparent;
+margin-left: 13%;
+margin-top: 13%;
+z-index: 5;
+width: 18%;
+}

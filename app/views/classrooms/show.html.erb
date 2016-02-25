@@ -1,0 +1,11 @@
+<h1><%= @classroom.name %></h1>
+
+<%= link_to "Edit Classroom", edit_teacher_classroom_path(@teacher, @classroom) %>
+<%= link_to "All Classrooms", teacher_classrooms_path(@teacher) %>
+
+<h2>Students:</h2>
+
+<%= render :partial => '/students/new' %>
+<% @students.each do |student| %>
+	<h4><%= link_to "#{student.fname + " " + student.lname}", edit_student_path(student) %></h4>
+<% end %>

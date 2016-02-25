@@ -1,0 +1,7 @@
+<%= link_to "New Lesson", new_lesson_path %>
+<% @lessons.each do |lesson| %>
+	<%= lesson.title %>
+	<%= lesson.body.html_safe %>
+	<%= lesson.common_core %>
+	<%= link_to "Edit", edit_lesson_path(lesson.id) %>
+<% end %>

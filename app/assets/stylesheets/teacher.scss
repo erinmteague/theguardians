@@ -1,0 +1,73 @@
+// Place all the styles related to the Teacher controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$tan: #C4B88F;
+ $lt-grn: #CFEA96;
+ $hlite: #FFFEF7;
+ $drk-grn: #383F35;
+ $pop: #6DF5FF;
+ $ink: #2A313D;
+ $logofont: 'Trade Winds', cursive;
+ $df-font: 'Bad Script', cursive;
+ $wel-font: 'Satisfy', cursive; 
+
+#left-col{
+	width: 40%;
+	float: left;
+	margin-left: -55%;
+	margin-top: 5%;
+}
+#right-col{
+	width: 40%;
+	float: left;
+	margin-left: -22%;
+	margin-top: 5%;
+}
+#imghldr{
+	width: 200px;
+	height: 200px;
+	border: 1px solid grey;
+}
+#classhdr{
+	font-size: 50px;
+	letter-spacing: 2px;
+	font-family: 
+	color: $ink;
+}
+.classname{
+	color:  $ink;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: $df-font;
+}
+.lesson-btn{
+	width: 40%;
+	height: 30px;
+	margin-top: 20px;
+	padding-top: 2%;
+	padding-bottom: 2%;	
+	background: teal;
+	border: 1px ridge white;
+	border-radius: 0.5em;
+	text-align: center;
+}
+.link{
+	color: white;
+	text-decoration: none;
+	font-family: $wel-font;
+}
+.welcome{
+	font-family: $wel-font;
+	margin-bottom: -3%;
+	color: $ink;
+}
+.wel-name{
+	font-family: $df-font;
+	color: $ink;
+}
+#classlist{
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	color: $ink;
+}

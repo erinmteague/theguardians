@@ -1,0 +1,60 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$logofont: 'Trade Winds', cursive;
+$df-font: 'ABeeZee', sans-serif;
+$silly-font: 'Schoolbell', cursive;
+$tan: #C4B88F;
+$lt-grn: #CFEA96;
+$hlite: #FFFEF7;
+$drk-grn: #383F35;
+$pop: #6DF5FF;
+
+#tea_sgin {
+	float: left;
+	margin-top: 12%;
+	margin-left: -43%;
+	text-align: center;
+}
+#stu_sgin{
+	float: left;
+	padding-top: 12%;
+	margin-left: -5%;
+	text-align: center;
+}
+.sgin{
+	font-size: 40px;
+	width: 63%;	
+	margin-left: 15%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	font-family: $df-font;
+	color: $hlite;
+	text-shadow: 1px 1px $lt-grn,
+		1px -1px $lt-grn,
+		-1px 1px $lt-grn,
+		-1px -1px $lt-grn;
+	background: #1CDB7F;
+	border-radius: 0.2em;
+	border: 3px ridge #20F78F;
+}
+.sgin-form{
+	width: 100%;
+}
+.form-field{
+	width: 80%;
+	height: 25px;
+	margin-bottom: 2%;
+	background: white;
+	border-radius: 0.5em;
+	font-size: 15px;
+}
+.form-btn{
+	width: 60%;
+	height: 30px;
+	background: #C7F74F;
+	border-radius: 0.5em;
+	font-family: $df-font;
+	font-size: 20px;
+	color: #0F665B;
+}

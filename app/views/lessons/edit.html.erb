@@ -1,0 +1,11 @@
+<h1>Lessons#edit</h1>
+<p>Find me in app/views/lessons/edit.html.erb</p>
+
+<%= form_for @lesson do |f| %>
+	<%= f.text_field :title, placeholder: "Title" %>
+	<%= f.text_field :body, placeholder: "type html here" %>
+	<%= f.text_field :common_core, placeholder: "common core" %>
+	<%= f.submit "Update" %>
+<% end %>
+
+<%= link_to "Delete Lesson", lesson_path(@lesson.id), method: :delete %>

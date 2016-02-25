@@ -1,0 +1,11 @@
+<h1>Teacher#new</h1>
+<p>Find me in app/views/teacher/new.html.erb</p>
+
+<%= form_for @teacher do |f| %>
+	<%= f.text_field :fname, placeholder: "First Name"%>
+	<%= f.text_field :lname, placeholder: "Last Name"%>
+	<%= f.text_field :email, placeholder: "Email"%>
+	<%= f.text_field :school, placeholder: "School"%>
+	<%= f.password_field :password, placeholder: "Password"%>
+	<%= f.submit "Sign Up"%>
+<% end %>
