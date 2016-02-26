@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
 
   def show
   	@student = Student.find(params[:id])
+    @lessons = Lesson.all
     render :layout => 'app2'
   end
 

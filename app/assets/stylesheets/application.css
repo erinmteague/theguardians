@@ -91,6 +91,16 @@ footer {
 	background-size: cover;
 	top: 14%;
 	margin-left: -10px;
+	z-index: 3;
+ }
+ .spine{
+ 	opacity: 0.3;
+ 		position: fixed;
+ 		left: 46%;
+ 		z-index: 2;
+		width: 30px;
+		height: 778px;
+ 		background: transparent url('/assets/spine.jpg');
  }
  .dropdown{
  		width: 55px;
@@ -117,5 +127,17 @@ footer {
  	font-size: 18px;
  	font-weight: 800;
  	padding-top: 5%;
+ }
+ 
+ /* app3 */
+ .main_container3 {
+	width: 102%;
+	height: 778px;
+	box-shadow: 10px 10px 5px #888888;
+	background: #4FEDEF url('/assets/wrldmp.png') center no-repeat;
+	background-size: 88%;	
+	top: 14%;
+	margin-left: -10px;
+	z-index: 2;
  }
  

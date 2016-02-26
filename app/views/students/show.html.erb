@@ -1,9 +1,9 @@
 <div id="left-col">
 	<h1 class="welcome">Welcome, </h1>
 	<h1 class="wel-name"><%= @student.fname + " " + @student.lname %></h1>
-	<div id="imghldr"></div>
-	<h3><%= @student.grade%></h3>
-	<h3>Ms. <%= @student.teacher.lname%></h3>
+	<div class="imghldr"></div>
+	<h3>grade: <%= @student.grade%></h3>
+	<h3>teacher: <%= @student.teacher.lname%></h3>
 </div>
 
 <div id="right-col">
@@ -13,8 +13,11 @@
 		</div>
 	</div>
 	<h1 id="classhdr">Completed Adventures:</h1>
-		
-	
+	<ul>
+		<% @lessons.each do |lesson| %>
+			<li><%= lesson.title %><li>
+		<% end %>
+	</ul>
 	
 	
 </div>

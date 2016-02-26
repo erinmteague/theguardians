@@ -14,4 +14,10 @@ class ApplicationController < ActionController::Base
   def current_teacher
   	@current_teacher ||= Teacher.find(session[:teacher_id]) if session[:teacher_id]
   end
+
+   # Helper Method to define when the Admin is currently logged in
+  helper_method :admin
+  def admin
+    @admin ||= Admin.find(session[:admin_id]) if session[:admin_id]
+  end
 end

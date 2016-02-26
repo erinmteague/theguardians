@@ -7,13 +7,17 @@ class SessionsController < ApplicationController
 	def create
 			@teacher = Teacher.find_by_email(params[:email])
 			@student = Student.find_by_username(params[:username])
+			@admin = admin
 	    if @teacher && @teacher.authenticate(params[:password])
 	      session[:teacher_id] = @teacher.id
 	      redirect_to teacher_path(@teacher.id)
 	    elsif @student && @student.authenticate(params[:password])
 	     	session[:student_id] = @student.id
 				redirect_to student_path(@student.id)
-			else	     	
+			elsif @admin && @admin.authenticate(params[:password])
+	     	session[:admin_id] = @admin.id
+				redirect_to admin_path(@admin.id)
+			else     	
 	     	redirect_to :back
 	    end
 	end

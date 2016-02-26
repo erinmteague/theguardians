@@ -1,5 +1,6 @@
 class LessonsController < ApplicationController
   before_action :SetTeacher
+  layout 'app3'
 
   # Lessons can only be managed by Admin
   def index

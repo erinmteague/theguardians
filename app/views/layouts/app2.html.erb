@@ -10,7 +10,7 @@
 <body>
 	<nav class="navbar">
 		<div id="leftnav">
-			<% if @current_student %>
+			<% if current_student %>
 					<%= link_to "The Guardians", student_path(@student), :class => "logo2" %>
 				<% elsif current_teacher %>				
 					<%= link_to "The Guardians", teacher_path(@teacher), :class => "logo2" %>
@@ -21,7 +21,7 @@
 		<div id="rightnav">
 				<div class="dropdown"></div>
   				<div class="dropdown-content">
-  					<% if @current_teacher %>
+  					<% if current_teacher %>
 							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
 						<% else %>				
 							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
@@ -33,7 +33,8 @@
 	<%= flash[:success] if flash[:success] %>
 	<%= flash[:fail] if flash[:fail] %>
 	<div class="main_container2">
-		<%= yield %>f
+			<div class="spine"></div>
+		<%= yield %>
 	</div>
 	<footer class="footer">
 		<p id="cpyrt">Copyright Erin Teague 2016</p>

@@ -10,13 +10,13 @@
 <body>
 	<nav class="navbar">
 		<div id="leftnav">
-			<% if @current_student %>
-					<%= link_to "The Guardians", student_path(@student), :class => "logo" %>
-				<% elsif current_teacher %>				
-					<%= link_to "The Guardians", teacher_path(@teacher), :class => "logo" %>
-				<% else %>
-					<%= link_to "The Guardians", root_path, :class => "logo" %>
-				<% end %>
+			<% if current_student %>
+				<%= link_to "The Guardians", student_path(current_student), :class => "logo" %>
+			<% elsif current_teacher %>				
+				<%= link_to "The Guardians", teacher_path(current_teacher), :class => "logo" %>
+			<% else %>
+				<%= link_to "The Guardians", root_path, :class => "logo" %>
+			<% end %>
 		</div>
 		<div id="rightnav">
 			<span>
