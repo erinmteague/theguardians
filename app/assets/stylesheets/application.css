@@ -95,7 +95,7 @@ footer {
  }
  .spine{
  	opacity: 0.3;
- 		position: fixed;
+ 		position: relative;
  		left: 46%;
  		z-index: 2;
 		width: 30px;

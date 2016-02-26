@@ -1,21 +1,22 @@
-<div id="left-col">
+<div id="stu-left-col">
 	<h1 class="welcome">Welcome, </h1>
-	<h1 class="wel-name"><%= @student.fname + " " + @student.lname %></h1>
+	<h1 class="stu-wel-name"><%= @student.fname + " " + @student.lname %></h1>
 	<div class="imghldr"></div>
-	<h3>grade: <%= @student.grade%></h3>
-	<h3>teacher: <%= @student.teacher.lname%></h3>
+	<h3 class="info">grade: <%= @student.grade%></h3>
+	<h3 class="info">teacher: <%= @student.teacher.lname%></h3>
 </div>
 
-<div id="right-col">
+<div id="stu-right-col">
+	<p class="date"><%= Time.new.strftime('%A, %B %e, %Y:') %></p>
 	<div id="btnbox">
-		<div class="lesson-btn">
-				<%= link_to "Start a New Adventure", lessons_path, :class => "link" %>
+		<div class="adv-btn">
+				<%= link_to "Start a New Adventure!", lessons_path, :class => "ad-link" %>
 		</div>
 	</div>
-	<h1 id="classhdr">Completed Adventures:</h1>
-	<ul>
+	<h1 id="advhdr">Completed Adventures:</h1>
+	<ul class="comp-class">
 		<% @lessons.each do |lesson| %>
-			<li><%= lesson.title %><li>
+			<li id="check"><%= lesson.title %></li>
 		<% end %>
 	</ul>
 	

@@ -1,10 +1,83 @@
 // Place all the styles related to the students controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$tan: #C4B88F;
+ $lt-grn: #CFEA96;
+ $hlite: #FFFEF7;
+ $drk-grn: #383F35;
+ $pop: #6DF5FF;
+ $ink: #2A313D;
+ $logofont: 'Trade Winds', cursive;
+ $df-font: 'Bad Script', cursive;
+ $wel-font: 'Satisfy', cursive; 
+ $hand: 'Coming Soon', cursive;
+
+#stu-left-col{
+	width: 30%;
+	float: left;
+	margin-left: 10%;
+	margin-top: -42%;
+}
+#stu-right-col{
+	width: 40%;
+	float: left;
+	margin-left: 54%;
+	margin-top: -39%;
+}
 .imghldr{
 	width: 200px;
 	height: 300px;
 	border: 1px solid grey;
 	background: url('/assets/avatar1.jpeg') center no-repeat;
 	// background-size: cover;
+}
+.stu-wel-name{
+	font-family: $hand;
+	color: $ink;
+}
+#advhdr{
+	font-size: 50px;
+	letter-spacing: 2px;
+	font-family: $hand;
+	color: $ink;
+	text-decoration: underline;
+	margin-bottom: -3%;
+}
+.info{
+	font-family: $hand;
+	font-size: 18px;
+	color: $ink;
+}
+li#check{
+	background: url('/assets/check.png') no-repeat left;
+	padding-left: 8%;
+	list-style-type: none;
+}
+.comp-class{
+	font-family: $hand;
+	font-size: 25px;
+	color: $ink;
+}
+.adv-btn{
+	width: 40%;
+	height: 27px;
+	margin-top: 20px;
+	margin-bottom: 10%;	
+	padding-top: 2%;
+	padding-bottom: 2%;	
+	background: $pop;
+	border: 2px outset #A3F8FF;
+	border-radius: 0.5em;
+	text-align: center;
+}
+.ad-link, .date{
+	color: $ink;
+	text-decoration: none;
+	font-family: $hand;
+	font-size: 20px;
+}
+.date{
+	font-size: 30px;
+	margin-top: -2%;
+	margin-bottom: -3%;
 }
