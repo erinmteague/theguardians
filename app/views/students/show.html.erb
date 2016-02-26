@@ -1,9 +1,15 @@
 <div id="stu-left-col">
 	<h1 class="welcome">Welcome, </h1>
 	<h1 class="stu-wel-name"><%= @student.fname + " " + @student.lname %></h1>
-	<div class="imghldr"></div>
+	<div class="imghldr2"></div>
 	<h3 class="info">grade: <%= @student.grade%></h3>
 	<h3 class="info">teacher: <%= @student.teacher.lname%></h3>
+	<div id="leafbox">
+			<p id="eco-hdr">Today's Eco-Fact:</p>
+			<div id="leaftxt">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa dolorem voluptas tempore repellat magni, ab nam fugiat aspernatur iure optio hic suscipit rem provident excepturi officiis quia nesciunt explicabo. </p>
+			</div>
+		</div>
 </div>
 
 <div id="stu-right-col">
@@ -19,6 +25,4 @@
 			<li id="check"><%= lesson.title %></li>
 		<% end %>
 	</ul>
-	
-	
 </div>

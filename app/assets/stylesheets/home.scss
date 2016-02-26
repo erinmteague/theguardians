@@ -9,6 +9,7 @@ $lt-grn: #CFEA96;
 $hlite: #FFFEF7;
 $drk-grn: #383F35;
 $pop: #6DF5FF;
+$hand: 'Coming Soon', cursive;
 
 .getstarted{
 	text-align: right;
@@ -21,7 +22,7 @@ $pop: #6DF5FF;
 		2px -2px #96BA3B,
 		-2px 2px #96BA3B,
 		-2px -2px #96BA3B;
-	font-family: $df-font;
+	font-family: $hand;
 	text-decoration: none;
 	font-size: 50px;
 	padding-top: 2%;

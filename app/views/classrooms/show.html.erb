@@ -1,11 +1,21 @@
-<h1><%= @classroom.name %></h1>
+<div id="class-left-col"></div>
+	<h1 id="classname"><%= @classroom.name %></h1>
+	<h3 class="croomlnks"><%= link_to "Edit Classroom", edit_teacher_classroom_path(@teacher, @classroom), :class => "lnks" %></h3>
+	<h3 class="croomlnks"><%= link_to "All Classrooms", teacher_classrooms_path(@teacher), :class => "lnks" %></h3>
+	<div id="leftleft-col">
+		<h2 class="stu-hd">Students:</h2>
+			<% @students.each do |student| %>
+				<h4 class="stu-name"><%= link_to "#{student.fname + " " + student.lname}", edit_student_path(student), :class => "stu-name" %></h4>
+			<% end %>
+	</div>
+	<div id="rightleft-col">
+		<h2 class="stu-hd">Add Student:</h2>
+		<%= render :partial => '/students/new' %>
+	</div>
+</div>	
 
-<%= link_to "Edit Classroom", edit_teacher_classroom_path(@teacher, @classroom) %>
-<%= link_to "All Classrooms", teacher_classrooms_path(@teacher) %>
-
-<h2>Students:</h2>
-
-<%= render :partial => '/students/new' %>
-<% @students.each do |student| %>
-	<h4><%= link_to "#{student.fname + " " + student.lname}", edit_student_path(student) %></h4>
-<% end %>
+<div id="class-right-col">
+	<div id="chart">
+		<h2>This is where completions chart will go</h2>
+	</div>
+</div>

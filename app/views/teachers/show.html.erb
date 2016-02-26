@@ -2,15 +2,22 @@
 	<h1 class="welcome">Welcome, </h1>
 	<h1 class="wel-name"><%= @teacher.fname + " " + @teacher.lname %></h1>
 	<div class="imghldr"></div>
-	<h3>Email: <%= @teacher.email%></h3>
-	<h3>School: <%= @teacher.school%></h3>
+	<h3 class="info">Email: <%= @teacher.email%></h3>
+	<h3 class="info">School: <%= @teacher.school%></h3>
 	<h3><%= @teacher.grade%></h3>
 	<%= link_to "Edit", edit_teacher_path(@teacher.id) %>
+		<div id="leafbox">
+			<p id="eco-hdr">Today's Eco-Fact:</p>
+			<div id="leaftxt">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa dolorem voluptas tempore repellat magni, ab nam fugiat aspernatur iure optio hic suscipit rem provident excepturi officiis quia nesciunt explicabo. </p>
+			</div>
+	</div>
 </div>
 
 <div id="right-col">
+	<p class="date"><%= Time.new.strftime('%A, %B %e, %Y:') %></p>
 	<h1 id="classhdr">My Classrooms:</h1>
-	<ul>
+	<ul id="cls-hldr">
 		<% @classrooms.each do |classroom| %>
  			<li id="classlist">
  				<%= link_to "#{classroom.name}", teacher_classroom_path(@teacher.id, classroom), :class => "classname" %><br>

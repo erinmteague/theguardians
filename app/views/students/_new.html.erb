@@ -1,10 +1,10 @@
-<%= form_for @student do |f| %>
-	<%= f.text_field :fname, placeholder: "First Name"%>
-	<%= f.text_field :lname, placeholder: "Last Name"%>
-	<%= f.text_field :username, placeholder: "Username"%>
-	<%= f.text_field :grade, placeholder: "grade"%>
-	<%= f.text_field :classroom_id, value: @classroom.id, hidden:true %>
-	<%= f.text_field :teacher_id, value: @teacher.id, hidden:true %>
-	<%= f.password_field :password, placeholder: "Password"%>
-	<%= f.submit "Create Student"%>
+<%= form_for @student, :class => "stu-form" do |f| %>
+	<%= f.text_field :fname, placeholder: "First Name", :class => "stu-formfld"%><br>
+	<%= f.text_field :lname, placeholder: "Last Name", :class => "stu-formfld"%><br>
+	<%= f.text_field :username, placeholder: "Username", :class => "stu-formfld"%><br>
+	<%= f.text_field :grade, placeholder: "grade", :class => "stu-formfld"%><br>
+	<%= f.text_field :classroom_id, value: @classroom.id, hidden:true, :class => "stu-formfld" %>
+	<%= f.text_field :teacher_id, value: @teacher.id, hidden:true, :class => "stu-formfld" %>
+	<%= f.password_field :password, placeholder: "Password", :class => "stu-formfld"%><br>	
+	<%= f.submit "Create Student", :class => "stu-submit"%>
 <% end %>

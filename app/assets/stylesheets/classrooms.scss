@@ -1,3 +1,63 @@
 // Place all the styles related to the classrooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$ink: #2A313D;
+$lt-ink: #414E63;
+ $logofont: 'Trade Winds', cursive;
+ $df-font: 'Bad Script', cursive;
+ $wel-font: 'Satisfy', cursive; 
+ $hand: 'Coming Soon', cursive;
+
+// classroom#show
+#class-left-col{
+	width: 48%;
+	margin-top: -45%;	
+}
+#class-right-col{
+	width: 48%;
+	margin-top: -21%;
+	margin-left: 54%;	
+	float: left;
+}
+#leftleft-col{	
+	width: 15%;
+	float: left;
+	margin-left: 3%;
+}
+#rightleft-col{
+	margin-top: 0%;
+	width: 30%;
+	float: left;
+}
+#chart{
+	width: 90%;
+	border: 1px outset black;
+	background: transparent;
+	height: 600px;
+	margin-top: -45%;
+}
+#classname{
+	margin-left: 3%;
+	font-family: $hand;
+	color: $ink;
+}
+.croomlnks{
+	margin-left: 3%;
+}
+.lnks{
+	text-decoration: none;
+	color: $lt-ink;
+}
+.stu-hd{
+	font-family: $hand;
+	color: $ink;
+}
+.stu-name{
+	color: $lt-ink;
+	text-decoration: none;
+	font-size: 20px;
+	margin-bottom: -11%;
+}
+
+// classroom#new
+

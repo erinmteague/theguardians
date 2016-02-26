@@ -13,18 +13,18 @@ $tan: #C4B88F;
  $hand: 'Coming Soon', cursive;
 
 #stu-left-col{
-	width: 30%;
+	width: 49%;
 	float: left;
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-top: -42%;
 }
 #stu-right-col{
-	width: 40%;
+	width: 50%;
 	float: left;
 	margin-left: 54%;
 	margin-top: -39%;
 }
-.imghldr{
+.imghldr2{
 	width: 200px;
 	height: 300px;
 	border: 1px solid grey;
@@ -79,5 +79,52 @@ li#check{
 .date{
 	font-size: 30px;
 	margin-top: -2%;
-	margin-bottom: -3%;
+	margin-bottom: 0%;
+}
+
+#leafbox{
+	position: relative;
+	background: transparent url('/assets/leaf.png') center no-repeat;
+	width: 60%;
+	height: 300px;
+	margin-top: -52% !important;
+	margin-left: 27%;
+	transform: rotate(-25deg); 
+}
+#leaftxt{
+	width: 61%;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 22%;
+  margin-top: 9%;
+  font-size: 20px;
+  font-weight: 800;	
+  color: $ink;
+  line-height: 18px;
+  font-family: helvetica;
+}
+#eco-hdr{
+	margin-left: 32%;
+  font-size: 25px;
+  font-family: $hand;
+}
+
+// new student form
+
+.stu-form{
+	width: 50%;
+	display: block;
+}
+.stu-formfld{
+	width: 45%;
+	background: white;
+	height: 20px;
+}
+.stu-submit{
+	width: 35%;
+	background: #C7F74F;
+	border-radius: 0.5em;
+	font-family: 'Coming Soon';
+	font-size: 20px;
+	color: #0F665B;
 }
