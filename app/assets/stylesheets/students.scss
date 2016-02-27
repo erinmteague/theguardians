@@ -128,3 +128,42 @@ li#check{
 	font-size: 20px;
 	color: #0F665B;
 }
+// student edit
+#edit-stu-form{
+	width: 50%;
+	margin-top: -38%;
+	margin-left: 5%;
+}
+.ed-stu-form{
+	width: 50%;
+	display: block;
+}
+.ed-stu-formfld{
+	width: 45%;
+	background: white;
+	height: 20px;
+	font-size: 20px;
+}
+.ed-stu-submit{
+	width: 35%;
+	background: #C7F74F;
+	border-radius: 0.5em;
+	font-family: 'Coming Soon';
+	font-size: 20px;
+	color: #0F665B;
+}
+#ed-hdr{
+	font-family: $hand;
+	font-size: 35px;
+}
+.del-stu{
+	width: 100%;
+	background: #C7F74F;
+	border: 2px outset lightgrey;
+	border-radius: 0.5em;
+	font-family: 'Coming Soon';
+	font-size: 20px;
+	color: #0F665B;
+	text-decoration: none;
+	padding: 0.2% 9.2%;
+}

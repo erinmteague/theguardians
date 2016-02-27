@@ -1,11 +1,14 @@
-<h1>Students#edit</h1>
+<div id="edit-stu-form">
+	<h2 id="ed-hdr">Edit Student:</h2>
+	<%= form_for @student, :class => "ed-stu-form" do |f| %>
+		<%= f.text_field :fname, placeholder: "First Name", :class => "ed-stu-formfld"%><br>
+		<%= f.text_field :lname, placeholder: "Last Name", :class => "ed-stu-formfld"%><br>
+		<%= f.text_field :username, placeholder: "Username", :class => "ed-stu-formfld"%><br>
+		<%= f.text_field :grade, placeholder: "grade", :class => "ed-stu-formfld"%><br>
+		<%= f.password_field :password, placeholder: "Password", :class => "ed-stu-formfld"%><br>
+		<%= f.submit "Update Student", :class => "ed-stu-submit"%>
+	<% end %>
+	<%= link_to "Delete Student", student_path(@student), method: :delete, :class => 'del-stu' %>
+</div>
 
-<%= form_for @student do |f| %>
-	<%= f.text_field :fname, placeholder: "First Name"%>
-	<%= f.text_field :lname, placeholder: "Last Name"%>
-	<%= f.text_field :username, placeholder: "Username"%>
-	<%= f.text_field :grade, placeholder: "grade"%>
-	<%= f.password_field :password, placeholder: "Password"%>
-	<%= f.submit "Update Student"%>
-<% end %>
 	

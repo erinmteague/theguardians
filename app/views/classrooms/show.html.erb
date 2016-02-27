@@ -1,6 +1,8 @@
 <div id="class-left-col"></div>
 	<h1 id="classname"><%= @classroom.name %></h1>
-	<h3 class="croomlnks"><%= link_to "Edit Classroom", edit_teacher_classroom_path(@teacher, @classroom), :class => "lnks" %></h3>
+	<div id="edit-form">
+		<%= render :partial => 'classrooms/edit'%>
+	</div>
 	<h3 class="croomlnks"><%= link_to "All Classrooms", teacher_classrooms_path(@teacher), :class => "lnks" %></h3>
 	<div id="leftleft-col">
 		<h2 class="stu-hd">Students:</h2>
