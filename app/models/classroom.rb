@@ -1,4 +1,4 @@
 class Classroom < ActiveRecord::Base
-  belongs_to :student
-  belongs_to :teacher
+  has_many :students, dependent: :destroy
+  belongs_to :teacher, dependent: :destroy
 end

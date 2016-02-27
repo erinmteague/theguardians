@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TheGuardiansEteague</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Bad+Script|Coming+Soon|Satisfy|Trade+Winds' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<nav class="navbar">
+		<div id="leftnav">
+			<% if current_student %>
+					<%= link_to "The Guardians", student_path(current_student), :class => "logo2" %>
+				<% elsif current_teacher %>				
+					<%= link_to "The Guardians", teacher_path(current_teacher), :class => "logo2" %>
+				<% else %>
+					<%= link_to "The Guardians", root_path, :class => "logo2" %>
+				<% end %>
+		</div>
+		<div id="rightnav">
+				<div class="dropdown"></div>
+  				<div class="dropdown-content">
+  					<% if current_teacher %>
+							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
+						<% else %>				
+							<%= link_to "Sign Out", logout_path, :class => "sgnout" %>
+						<% end %>
+				
+					</div>
+		</div>
+	</nav>
+	<%= flash[:success] if flash[:success] %>
+	<%= flash[:fail] if flash[:fail] %>
+	<div class="main_container4">
+		<%= yield %>
+	</div>
+	<footer class="footer">
+		<p id="cpyrt">Copyright Erin Teague 2016</p>
+	</footer>
+</body>
+</html>

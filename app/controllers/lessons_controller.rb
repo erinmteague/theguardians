@@ -1,6 +1,6 @@
 class LessonsController < ApplicationController
   before_action :SetTeacher
-  layout 'app3'
+  layout 'app3', except: [:show, :play]
 
   # Lessons can only be managed by Admin
   def index
@@ -9,6 +9,12 @@ class LessonsController < ApplicationController
 
   def show
   	@lesson = Lesson.find(params[:id])
+    render :layout => 'app4'
+  end
+
+  def play
+    @lesson = Lesson.find(params[:id])
+    render :layout => 'app4'
   end
 
   def new

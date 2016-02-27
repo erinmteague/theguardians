@@ -3,7 +3,6 @@
 	<div id="edit-form">
 		<%= render :partial => 'classrooms/edit'%>
 	</div>
-	<h3 class="croomlnks"><%= link_to "All Classrooms", teacher_classrooms_path(@teacher), :class => "lnks" %></h3>
 	<div id="leftleft-col">
 		<h2 class="stu-hd">Students:</h2>
 			<% @students.each do |student| %>
@@ -13,6 +12,7 @@
 	<div id="rightleft-col">
 		<h2 class="stu-hd">Add Student:</h2>
 		<%= render :partial => '/students/new' %>
+		<%= link_to "Delete Classroom", teacher_classroom_path(@teacher.id, @classroom.id), method: :delete, :class => 'cl-del' %>
 	</div>
 </div>	
 

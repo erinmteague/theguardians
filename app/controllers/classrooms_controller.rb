@@ -44,7 +44,8 @@ class ClassroomsController < ApplicationController
 
   # Delete classroom(and students within-dependent destroy) and redirect to Teacher#Show page
   def destroy
-  	if @classroom.destroy
+    @classroom = @teacher.classrooms.find(params[:id])
+  	if @classroom.delete
   		redirect_to teacher_classrooms_path
   	else
   		redirect_to :back
