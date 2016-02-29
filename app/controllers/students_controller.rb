@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
 
   def show
   	@student = Student.find(params[:id])
-    @lessons = Lesson.all
+    @comps = Completion.where(completer_id: params[:id])
     render :layout => 'app2'
   end
 

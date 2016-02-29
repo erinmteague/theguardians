@@ -22,7 +22,7 @@
 		</div>
 		<div id="rightnav">
 			<span>
-				<%= link_to "Sign Out", logout_path if @current_student || @current_teacher %>
+				<%= link_to "Sign Out", logout_path if @current_student || @current_teacher || admin %>
 			</span>
 		</div>
 	</nav>

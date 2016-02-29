@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'completions/create'
+
   root 'home#home'
   resources :teachers do
     resources :classrooms
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
   post '/admin' => 'sessions#create'
   get '/admin/show' => 'admins#show'
   get '/lessons/:id/play' => 'lessons#play', as: 'play'
+  post '/lessons/:id/play' => 'completions#create', as: 'completion'
 
 
   

@@ -6,7 +6,7 @@
 <% else %>	
 <div id="admin_sgin">
 	<h2 class="sgin">Admin Sign In</h2>
-	<%= form_tag admin_signin_path, :class => "sgin-form" do %>
+	<%= form_tag admin_path, :class => "sgin-form" do %>
 		<%= text_field_tag :email, nil, placeholder: "Email", :class => "form-field" %>
 		<%= password_field_tag :password, nil, placeholder: "Password", :class => "form-field" %>
 		<%= submit_tag "Sign In", :class => "form-btn"%>

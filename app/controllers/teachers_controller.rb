@@ -30,7 +30,7 @@ class TeachersController < ApplicationController
   end
 
   def edit
-    @teacher = current_teacher
+    @teacher = Teacher.find(params[:id])
     render :layout => 'app2'
   end
 

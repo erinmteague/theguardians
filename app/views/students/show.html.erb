@@ -21,8 +21,8 @@
 	</div>
 	<h1 id="advhdr">Completed Adventures:</h1>
 	<ul class="comp-class">
-		<% @lessons.each do |lesson| %>
-			<li id="check"><%= lesson.title %></li>
+		<% @comps.each do |comp| %>
+			<li id="check"><%= comp.completed.title %></li>
 		<% end %>
 	</ul>
 </div>

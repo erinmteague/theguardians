@@ -1,54 +1,71 @@
-<% if admin %>
-	<% @lessons.each do |lesson| %>
-		<%= lesson.title %>
-		<%= link_to "Edit", edit_lesson_path(lesson) %>
-	<% end %>
-<% else %>
 <div class="lessonbox" id="lesson1">	
 	<div class="flag" id="flag1"></div>
 	<div class="flagbox" id="f1box1">
+		<p><%= Lesson.find(11).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(11)) %></p>
+		<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(11)) %>
+		<% end %>
 	</div>
 </div>
 
 <div class="lessonbox" id="lesson2">	
 	<div class="flag" id="flag2"></div>
 	<div class="flagbox" id="f2box2">
+		<p><%= Lesson.find(12).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(12)) %></p>
+			<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(12)) %>
+		<% end %>
 	</div>
 </div>
 
 <div class="lessonbox" id="lesson3">	
 	<div class="flag" id="flag3"></div>
 	<div class="flagbox" id="f3box3">
+		<p><%= Lesson.find(4).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(4)) %></p>
+			<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(4)) %>
+		<% end %>
 	</div>
 </div>
 
 <div class="lessonbox" id="lesson4">	
 	<div class="flag" id="flag4"></div>
 	<div class="flagbox" id="f4box4">
+		<p><%= Lesson.find(6).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(6)) %></p>
+			<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(6)) %>
+		<% end %>
 	</div>
 </div>
 
 <div class="lessonbox" id="lesson5">	
 	<div class="flag" id="flag5"></div>
 	<div class="flagbox" id="f5box5">
+		<p><%= Lesson.find(5).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(5)) %></p>
+			<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(5)) %>
+		<% end %>
 	</div>
 </div>
 
 <div class="lessonbox" id="lesson6">	
 	<div class="flag" id="flag6"></div>
 	<div class="flagbox" id="f6box6">
+		<p><%= Lesson.find(9).title %></p>
 		<p>This lesson is about this and is super duper awesome.
-			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
+			<%= link_to "Try it out!", lesson_path(Lesson.find(9)) %></p>
+			<% if admin %>
+			<%= link_to "Edit", edit_lesson_path(Lesson.find(9)) %>
+		<% end %>
 	</div>
 </div>
-<% end %>

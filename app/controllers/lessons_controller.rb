@@ -1,15 +1,10 @@
 class LessonsController < ApplicationController
   before_action :SetTeacher
-  layout 'app3', except: [:show, :play, :index]
+  layout 'app3', except: [:show, :play]
 
   # Lessons can only be managed by Admin
   def index
   	@lessons = Lesson.all
-    if admin
-      render :layout => 'application'
-    else 
-      render :layout => 'app3'
-    end
   end
 
   def show
