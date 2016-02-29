@@ -14,6 +14,8 @@
 				<%= link_to "The Guardians", student_path(current_student), :class => "logo" %>
 			<% elsif current_teacher %>				
 				<%= link_to "The Guardians", teacher_path(current_teacher), :class => "logo" %>
+			<% elsif admin %>
+				<%= link_to "The Guardians", admin_path(admin), :class => "logo" %>
 			<% else %>
 				<%= link_to "The Guardians", root_path, :class => "logo" %>
 			<% end %>

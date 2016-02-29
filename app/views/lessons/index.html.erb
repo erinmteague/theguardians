@@ -1,3 +1,9 @@
+<% if admin %>
+	<% @lessons.each do |lesson| %>
+		<%= lesson.title %>
+		<%= link_to "Edit", edit_lesson_path(lesson) %>
+	<% end %>
+<% else %>
 <div class="lessonbox" id="lesson1">	
 	<div class="flag" id="flag1"></div>
 	<div class="flagbox" id="f1box1">
@@ -45,3 +51,4 @@
 			<%= link_to "Try it out!", lesson_path(Lesson.first) %></p>
 	</div>
 </div>
+<% end %>

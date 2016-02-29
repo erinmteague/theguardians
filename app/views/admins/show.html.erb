@@ -1,2 +1,15 @@
-<h1>Admins#show</h1>
-<p>Find me in app/views/admins/show.html.erb</p>
+<% if admin %>
+<h2>links on links on links</h2>
+	<%= link_to "Create Lesson", new_lesson_path %>
+	<%= link_to "All Lessons", lessons_path %>
+	<%= link_to "All Teachers", teachers_path %>
+<% else %>	
+<div id="admin_sgin">
+	<h2 class="sgin">Admin Sign In</h2>
+	<%= form_tag admin_signin_path, :class => "sgin-form" do %>
+		<%= text_field_tag :email, nil, placeholder: "Email", :class => "form-field" %>
+		<%= password_field_tag :password, nil, placeholder: "Password", :class => "form-field" %>
+		<%= submit_tag "Sign In", :class => "form-btn"%>
+	<% end %>
+</div>
+<% end %>

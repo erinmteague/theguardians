@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'signin' => 'sessions#new', as: 'signin'
   post 'signin' => 'sessions#create'
   get 'signout' => 'sessions#destroy', as: 'logout'
-  get '/admin' => 'sessions#new', as: 'admin-signin'
+  get '/admin' => 'admins#show', as: 'admin'
   post '/admin' => 'sessions#create'
   get '/admin/show' => 'admins#show'
   get '/lessons/:id/play' => 'lessons#play', as: 'play'

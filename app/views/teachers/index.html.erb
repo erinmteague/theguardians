@@ -1,0 +1,7 @@
+<% @teachers.each do |teacher| %>
+<div id="teachbox">
+	<h2><%= teacher.fname %> <% teacher.lname %></h2>
+	<h2><%= teacher.email %></h2>
+	<%= link_to "Edit", edit_teacher_path(teacher) %>
+</div>
+<% end %>
