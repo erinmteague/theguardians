@@ -1,0 +1,7 @@
+<%= form_for [@teacher, @classroom] do |f| %>
+	<%= f.text_field :name , placeholder: "Name", :class => 'clss-frm-fld' %>
+	<%= f.text_field :teacher_id, value: @teacher, hidden: true %>
+	<%= f.submit "Create Class", method: :create, :class => 'clss-frm-btn' %>
+<% end %>
+
+

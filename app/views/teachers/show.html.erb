@@ -25,8 +25,11 @@
 		<% end %>
 	</ul>
 	<div id="btnbox">
-		<div class="lesson-btn">
-			<%= link_to "Add New Class", new_teacher_classroom_path(@teacher, @classroom), :class => "link"%>
+		<div id="addclassbtn" class="lesson-btn">
+			<p id="addclsslnk">Add New Classroom</p>
+		</div>
+		<div id="addclasscontent">
+			<%= render :partial => 'classrooms/new' %>
 		</div>
 		<div class="lesson-btn">
 			<%= link_to "Lessons", lessons_path, :class => "link" %>

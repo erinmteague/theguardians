@@ -16,12 +16,14 @@
 
 $(document).ready(function(){
 
+// Drop Down Menu
 	$('.dropdown').on('click', function(){
 		$('.dropdown-content').show();
 		$('.dropdown-content').delay(2000);
 		$('.dropdown-content').slideUp();
 	});
 
+// Lesson Map Drop Downs
 	$('#flag1').on('click', function(){
 		$('#f1box1').show();
 		$('#f1box1').delay(5000);
@@ -56,6 +58,14 @@ $(document).ready(function(){
 		$('#f6box6').show();
 		$('#f6box6').delay(5000);
 		$('#f6box6').slideUp();
+	});
+
+// Add Class Form
+
+	$('#addclassbtn').on('click', function(){
+		$('#addclasscontent').show();
+		$('#addclasscontent').delay(8000);
+		$('addclasscontent').hide();
 	});
 
 });

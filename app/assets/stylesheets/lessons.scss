@@ -7,7 +7,9 @@ $ink: #2A313D;
  $df-font: 'Bad Script', cursive;
  $wel-font: 'Satisfy', cursive; 
  $hand: 'Coming Soon', cursive;
+ $lt-grn: #CFEA96;
 
+// lesson index
 .flag{
 	position: relative;
 	background: transparent url('/assets/mapmrkr.png') center no-repeat;
@@ -71,3 +73,44 @@ $ink: #2A313D;
 #f1box1, #f2box2, #f3box3, #f4box4, #f5box5, #f6box6{
 	display: none;
 } 
+
+// lesson show
+#show-container{
+	width: 100%;
+	height: 748px;
+	z-index: 2;
+	background: white url('/assets/rainforest2.jpg') center no-repeat;
+	background-size: cover;
+}
+#lesson-title{
+	width: 400px;
+	position: relative;
+	margin-top: 0%;
+	margin-left: 36%;
+  padding-top: 8%;
+	font-size: 90px;
+	color: #FDE74C;
+	text-shadow: 1px 1px $ink,
+		-1px 1px $ink,
+		1px -1px $ink,
+		-1px -1px $ink;
+}
+#char-image{
+	position: relative;
+  margin-left: 17%;
+  margin-top: -10%;
+}
+.play-btn{
+	position: relative;
+	margin-left:55%;
+	margin-top: -4%;
+	z-index: 4;
+}
+.play-lnk{
+	font-size: 35px;
+	text-decoration: none;
+	padding: 0.5% 10%;
+	background: $lt-grn;
+	border: 2px outset green;
+	border-radius: 1em;
+}

@@ -74,7 +74,7 @@ $tan: #C4B88F;
 	color: $ink;
 	text-decoration: none;
 	font-family: $hand;
-	font-size: 20px;;
+	font-size: 20px;
 }
 .welcome{
 	font-family: $wel-font;
@@ -111,4 +111,25 @@ $tan: #C4B88F;
 	margin-left: 32%;
   font-size: 25px;
   font-family: $hand;
+}
+#addclsslnk{
+	color: $ink;
+	text-decoration: none;
+	font-family: $hand;
+	font-size: 20px;
+	margin-top: -1%;
+}
+#addclasscontent{
+	display: none;
+	margin-top: 2%;
+}
+.clss-frm-fld{
+	background: white;
+	height: 25px;
+	width: 21%;
+}
+.clss-frm-btn{
+	background: #CFEA96;
+	height: 27px;
+	border-radius: 0.5em;
 }

@@ -1,2 +1,7 @@
-<h1>Lessons#show</h1>
-<p>Find me in app/views/lessons/show.html.erb</p>
+<div id="show-container">
+	<h1 id="lesson-title"><%= @lesson.title%></h1>
+	<img id="char-image" src="/assets/chicomendessad.png">
+	<div class="play-btn">
+		<%= link_to "Begin", play_path(@lesson), :class =>"play-lnk" %>
+	</div>
+</div>

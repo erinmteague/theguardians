@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   end
   resources :students
   resources :lessons
-  get 'signin' => 'sessions#new', :as => 'signin'
+  get 'signin' => 'sessions#new', as: 'signin'
   post 'signin' => 'sessions#create'
-  get 'signout' => 'sessions#destroy', :as => 'logout'
+  get 'signout' => 'sessions#destroy', as: 'logout'
   get '/admin' => 'sessions#new', as: 'admin-signin'
   post '/admin' => 'sessions#create'
   get '/admin/show' => 'admins#show'
+  get '/lessons/:id/play' => 'lessons#play', as: 'play'
+
 
   
 

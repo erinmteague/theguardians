@@ -7,6 +7,7 @@ class TeachersController < ApplicationController
   # Display Current Teacher and owned Classrooms
   def show
     @teacher = current_teacher
+    @classroom = Classroom.new
     @classrooms = Classroom.where(teacher_id: params[:id])
     render :layout => 'app2'
   end
