@@ -18,6 +18,92 @@
 
 <div id="class-right-col">
 	<div id="chart">
-		<h2>This is where completions chart will go</h2>
+		<table border="1" style="width:100%">
+			<th>
+				<% @lessons.each do |lesson| %>
+					<td><%= lesson.title %></td>
+				<% end %>
+			</th>
+				<% @students.each do |student| %>
+					<tr>
+						<td><%= student.lname %>, <%= student.fname %></td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "Tremendous Trees") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "Saving Species") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "Disappearing Frogs?") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "Where's the Coral?") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "Amazing Arctic") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+						<td>
+							<% student.completed.each do |comp| %>
+								<% if (comp.title == "The Everglades") == true %>
+							  	<p id="comp">√<p>
+								<% else %>
+									---
+								<% end %>
+							<% end %>
+							<% if student.completed == [] %>
+								---
+							<% end %>
+						</td>
+					</tr>
+				<% end %>
+			<tr>
+				
+			</tr>
+		</table>
 	</div>
 </div>

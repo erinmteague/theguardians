@@ -9,8 +9,9 @@ class ClassroomsController < ApplicationController
   # Only students with the same classroom_id as the show page will be displayed
   def show
   	@classroom = Classroom.find(params[:id])
-  	@students = Student.where(classroom_id: params[:id])
+  	@students = Student.where(classroom_id: params[:id]).sort_by{ |student| student.lname }
   	@student = Student.new
+    @lessons = Lesson.all
   end
 
   # Classroom belongs to Teacher, and Teacher creates Students(partial) within Classroom 
