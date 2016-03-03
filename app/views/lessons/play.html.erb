@@ -9,10 +9,10 @@
 	<!-- Page 11 -->
 	<div id="page11">
 		<div id="myname">
-			<h2 id="p11line1">My name is <span id="name">Chico</span> and I'm going to help save the frogs.</h2>
+			<h2 id="p11line1">Now its your turn...</h2>
 		</div>
 		<img id="chico1" src="/assets/chicomendessmilewavecopy.png">
-		<h2 id="bottomtxt">Let's see how you can help too!</h2>
+		<h2 id="bottomtxt">Click <span id="hlite">HERE</span> to see how you can help too!</h2>
 	</div>
 
 	<!-- Page 12 -->
@@ -26,8 +26,8 @@
 				<img id="sickfrog" src="/assets/sickfrog.png">
 				<img id="pesticides" src="/assets/Pesticides.
 				gif">
-				<img id="lawn1" src="/assets/grass.jpg">
-				<img id="lawn2" src="/assets/grass.jpg">
+				<img id="lawn1" src="/assets/grass.png">
+				<img id="lawn2" src="/assets/grass.png">
 			</div>
 		</div>
 	</div>
@@ -104,6 +104,7 @@
 		<div id="inputbx">
 			 <%= render :partial => "writtenresponses/new" %>
 		</div>
+		<img id="arrow6" src="/assets/arrow.png">
 	</div>
 
 	<!-- Page 18 -->
@@ -113,7 +114,7 @@
 			<h2 id="p18line2">See you next time <span id="guardian">guardian..</span></h2>
 		</div>
 		<div class="finish">
-				<h1><%= link_to "Finish!", completion_path(@lesson), method: :create, :class =>"play-btn" %></h1>
+				<h1><%= link_to "Finish!", completion_path(@lesson), method: :create, :class =>"play-btn2" %></h1>
 			</div>
 		</div>
 	</div>

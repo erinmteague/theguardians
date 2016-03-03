@@ -148,13 +148,15 @@ $('#arrow4').on('click', function(){
 $('#arrow5').on('click', function(){
 		$('#page16').hide();
 		$('#page17').show();
-		$('#p17line1, #inputbx').delay(1000);
-		$('#p17line1, #inputbx').fadeIn(1000);
+		$('#p17line1, #inputbx, #arrow6').delay(1000);
+		$('#p17line1, #inputbx, #arrow6').fadeIn(1000);
 	});
 
 $('#arrow6').on('click', function(){
 		$('#page17').hide();
 		$('#page18').show();
+		$('#p18line1, #p18line2, .finish').delay(1000);
+		$('#p18line1, #p18line2, .finish').fadeIn(1000);
 	});
 
 

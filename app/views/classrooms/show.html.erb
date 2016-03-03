@@ -25,7 +25,6 @@
 				<% @lessons.each do |lesson| %>
 					<td><%= lesson.title %></td>
 				<% end %>
-				<td>Written Responses</td>
 			</th>
 		</tr>
 				<% @students.each do |student| %>
@@ -78,9 +77,6 @@
 								<% else %>
 								<% end %>
 							<% end %>
-						</td>
-						<td>
-							<%= link_to "Responses", student_writtenresponses_path(student, @wrs) %>
 						</td>
 					</tr>
 				<% end %>

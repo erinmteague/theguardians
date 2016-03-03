@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   resources :teachers do
     resources :classrooms
   end
-  resources :students do
-    resources :writtenresponses
-  end
+  resources :students
+  resources :writtenresponses
   resources :lessons
   get 'signin' => 'sessions#new', as: 'signin'
   post 'signin' => 'sessions#create'
@@ -16,7 +15,7 @@ Rails.application.routes.draw do
   get '/admin/show' => 'admins#show'
   get '/lessons/:id/play' => 'lessons#play', as: 'play'
   post '/lessons/:id/play' => 'completions#create', as: 'completion'
-
+  
 
   
 

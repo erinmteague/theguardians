@@ -58,7 +58,7 @@ li{
  }
 footer {
 	width: 101%;
-	height: 80px;
+	height: 100px;
 	background-color: #138275;
 	margin-left: -10px;
 	border-top: 2px ridge #0F665B;
@@ -149,4 +149,5 @@ footer {
 	top: 14%;
 	margin-left: -10px;
 	z-index: 2;
+	font-family: 'Trade Winds', cursive;
  }

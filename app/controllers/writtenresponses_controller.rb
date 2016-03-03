@@ -1,8 +1,7 @@
 class WrittenresponsesController < ApplicationController
 
   def index
-    @student = Student.find(params[:student_id])
-    @wrs = @student.writtenresponses
+    @wrs = Writtenresponse.where(student_id: params[:id])
   end
 
   def new
