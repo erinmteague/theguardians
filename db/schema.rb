@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229175103) do
+ActiveRecord::Schema.define(version: 20160229213459) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,12 @@ ActiveRecord::Schema.define(version: 20160229175103) do
     t.integer  "completer_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "eco_facts", force: :cascade do |t|
+    t.text     "factoid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "lessons", force: :cascade do |t|
@@ -80,9 +86,22 @@ ActiveRecord::Schema.define(version: 20160229175103) do
 
   add_index "teachers", ["student_id"], name: "index_teachers_on_student_id", using: :btree
 
+  create_table "written_responses", force: :cascade do |t|
+    t.integer  "student_id"
+    t.integer  "lesson_id"
+    t.text     "response"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "written_responses", ["lesson_id"], name: "index_written_responses_on_lesson_id", using: :btree
+  add_index "written_responses", ["student_id"], name: "index_written_responses_on_student_id", using: :btree
+
   add_foreign_key "classrooms", "students"
   add_foreign_key "classrooms", "teachers"
   add_foreign_key "students", "classrooms"
   add_foreign_key "students", "teachers"
   add_foreign_key "teachers", "students"
+  add_foreign_key "written_responses", "lessons"
+  add_foreign_key "written_responses", "students"
 end

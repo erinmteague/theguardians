@@ -11,7 +11,7 @@ $lt-ink: #414E63;
 // classroom#show
 #class-left-col{
 	width: 48%;
-	margin-top: -45%;	
+	margin-top: -44%;		
 }
 #class-right-col{
 	width: 48%;
@@ -30,11 +30,9 @@ $lt-ink: #414E63;
 	float: left;
 }
 #chart{
-	width: 90%;
-	border: 1px outset black;
-	background: transparent;
-	height: 600px;
+	width: 93%;
 	margin-top: -45%;
+	font-family: helvetica;
 }
 #classname{
 	margin-left: 3%;
@@ -59,8 +57,18 @@ $lt-ink: #414E63;
 	margin-bottom: -11%;
 }
 #comp{
-color: red;
+color: blue;
 padding-left: 41%;
+line-height: 1%;
+font-weight: 900;
+font-family: helvetica;
+font-size: 18px;
+}
+table{
+	background: rgba(135,123,87,0.1);
+	#tr1{ 
+		background: rgba(127,184,0,0.2);
+	}
 }
 
 // classroom#new

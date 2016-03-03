@@ -19,11 +19,15 @@
 <div id="class-right-col">
 	<div id="chart">
 		<table border="1" style="width:100%">
+			<tr id="tr1">
 			<th>
+				Student
 				<% @lessons.each do |lesson| %>
 					<td><%= lesson.title %></td>
 				<% end %>
+				<td>Written Responses</td>
 			</th>
+		</tr>
 				<% @students.each do |student| %>
 					<tr>
 						<td><%= student.lname %>, <%= student.fname %></td>
@@ -32,11 +36,7 @@
 								<% if (comp.title == "Tremendous Trees") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
-							<% end %>
-							<% if student.completed == [] %>
-								---
 							<% end %>
 						</td>
 						<td>
@@ -44,11 +44,7 @@
 								<% if (comp.title == "Saving Species") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
-							<% end %>
-							<% if student.completed == [] %>
-								---
 							<% end %>
 						</td>
 						<td>
@@ -56,11 +52,7 @@
 								<% if (comp.title == "Disappearing Frogs?") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
-							<% end %>
-							<% if student.completed == [] %>
-								---
 							<% end %>
 						</td>
 						<td>
@@ -68,11 +60,7 @@
 								<% if (comp.title == "Where's the Coral?") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
-							<% end %>
-							<% if student.completed == [] %>
-								---
 							<% end %>
 						</td>
 						<td>
@@ -80,11 +68,7 @@
 								<% if (comp.title == "Amazing Arctic") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
-							<% end %>
-							<% if student.completed == [] %>
-								---
 							<% end %>
 						</td>
 						<td>
@@ -92,12 +76,11 @@
 								<% if (comp.title == "The Everglades") == true %>
 							  	<p id="comp">√<p>
 								<% else %>
-									---
 								<% end %>
 							<% end %>
-							<% if student.completed == [] %>
-								---
-							<% end %>
+						</td>
+						<td>
+							<%= link_to "Responses", student_writtenresponses_path(student, @wrs) %>
 						</td>
 					</tr>
 				<% end %>

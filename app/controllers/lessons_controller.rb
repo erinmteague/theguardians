@@ -14,6 +14,7 @@ class LessonsController < ApplicationController
 
   def play
     @lesson = Lesson.find(params[:id])
+    @wr = WrittenResponse.new
     render :layout => 'app4'
   end
 

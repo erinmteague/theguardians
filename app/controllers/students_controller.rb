@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   # Find Teacher and Classroom by id params, before completing all actions except for edit and update
+  before_action :SetClassroomDestroy, only: [:destroy]
   before_action :SetClassroom, except: [:edit, :update, :show, :destroy]
   before_action :SetTeacher
 
@@ -23,6 +24,7 @@ class StudentsController < ApplicationController
   def show
   	@student = Student.find(params[:id])
     @comps = Completion.where(completer_id: params[:id])
+    @ecofact = EcoFact.all.sample
     render :layout => 'app2'
   end
 
@@ -48,7 +50,7 @@ class StudentsController < ApplicationController
   	@student = Student.find(params[:id])
   	if @student.destroy
   		flash[:success] = "Sucess"
-  		redirect_to teacher_path(@teacher.id)
+  		redirect_to teacher_classroom_path(@teacher, @classroom)
   	else 
   		flash[:fail] = "something went wrong"
   		redirect_to :back
@@ -68,5 +70,10 @@ class StudentsController < ApplicationController
 
   def SetClassroom
      @classroom = Classroom.find(params[:student][:classroom_id])
+  end
+
+  def SetClassroomDestroy
+    @student = Student.find(params[:id])
+    @classroom = @student.classroom
   end
 end

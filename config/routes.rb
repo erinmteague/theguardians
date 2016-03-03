@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'completions/create'
-
   root 'home#home'
   resources :teachers do
     resources :classrooms
   end
-  resources :students
+  resources :students do
+    resources :writtenresponses
+  end
   resources :lessons
   get 'signin' => 'sessions#new', as: 'signin'
   post 'signin' => 'sessions#create'

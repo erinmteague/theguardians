@@ -16,7 +16,7 @@
 
 /*Application.html.erb*/
 nav{
-	width: 102%;
+	width: 101%;
 	height: 125px;
 	background-color: #1CDB7F;
 	margin-bottom: -21px;
@@ -50,18 +50,19 @@ li{
 	text-decoration: none;
 }
 .main_container {
-	width: 102%;
+	width: 101%;
 	height: 748px;
 	background-color: #4FEDEF;
 	margin-bottom: -21px;
 	margin-left: -10px;
  }
 footer {
-	width: 102%;
+	width: 101%;
 	height: 80px;
 	background-color: #138275;
 	margin-left: -10px;
 	border-top: 2px ridge #0F665B;
+	z-index: 3;
 }
 #cpyrt{
 	color: #0F665B;	
@@ -86,7 +87,7 @@ footer {
 }
 .main_container2 {
 	width: 102%;
-	height: 778px;
+	height: 737px;
 	background: url('/assets/paper2.jpg') center fixed;
 	background-size: cover;
 	top: 14%;
@@ -99,7 +100,7 @@ footer {
  		left: 46%;
  		z-index: 2;
 		width: 30px;
-		height: 778px;
+		height: 735px;
  		background: transparent url('/assets/spine.jpg');
  }
  .dropdown{

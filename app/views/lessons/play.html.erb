@@ -1,3 +1,119 @@
-<div id="play-container">
-	<h1><%= link_to "Finish!", completion_path(@lesson), method: :create, :class =>"play-btn" %></h1>
+	<!-- video page -->
+	<div id="videopage">
+		<iframe class="video" width="1060" height="596" src="https://www.youtube.com/embed/NvP6j4Dj0VA" frameborder="0" allowfullscreen></iframe>
+		<div class="arrow">
+			<img id="arrow1" src="/assets/arrow.png">
+		</div>
+	</div>
+	 
+	<!-- Page 11 -->
+	<div id="page11">
+		<div id="myname">
+			<h2 id="p11line1">My name is <span id="name">Chico</span> and I'm going to help save the frogs.</h2>
+		</div>
+		<img id="chico1" src="/assets/chicomendessmilewavecopy.png">
+		<h2 id="bottomtxt">Let's see how you can help too!</h2>
+	</div>
+
+	<!-- Page 12 -->
+	<div id="page12">
+		<div class="reasonbox">
+			<span id="p12line1">#1</span> <span id="p12line2">Never use chemical pesticides or herbicides in your lawn.</span>
+		</div>
+		<div class="scenebox">
+				<img id="arrow2" src="/assets/arrow.png">
+			<div class="scbxbkgd">
+				<img id="sickfrog" src="/assets/sickfrog.png">
+				<img id="pesticides" src="/assets/Pesticides.
+				gif">
+				<img id="lawn1" src="/assets/grass.jpg">
+				<img id="lawn2" src="/assets/grass.jpg">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page 13 -->
+	<div id="page13">
+		<div class="reasonbox">
+			<span id="p13line1">#2</span><span id="p13line2">Never purchase exotic frogs as pets.</span>
+		</div>
+		<div class="scenebox">
+			<img id="arrow3" src="/assets/arrow.png">
+			<div id="p13bx">
+				<img id="openhands" src="/assets/hands.png">
+				<img id="frog1" src="/assets/dartfrog.png">
+				<img id="x" src="/assets/redx.png"
+			</div>
+		</div>
+	</div>
 </div>
+
+<!-- Page 14 -->
+	<div id="page14">
+		<div id="reasonbox">
+			<span id="p14line1">#3</span><span id="p14line2">Keep your waterways clean...click on the floating trash to do your part!</span>
+		</div>
+		<div class="scenebox">
+			<div class="scbxbkgd">
+				<img id="trash5" src="/assets/cup.png">
+				<img id="trash6" src="/assets/crumbottle.png">
+				<img id="trash7" src="">
+				<img id="chico2" src="">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page 15 -->
+	<div id="page15">
+		<div class="reasonbox">
+			<span class="reasonnumber"></span>
+			<span id="p15line1">#4</span><span id="p15line2">Build a hoppin' habitat in your backyard.</span>
+		</div>
+		<div class="scenebox">
+			<img id="arrow4" src="/assets/arrow.png">
+			<div class="scbxbkgd">
+				<img id="pond5" src="/assets/pond.png">
+				<img id="frog6" src="/assets/frog6.png">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page 16 -->
+	<div id="page16">
+		<div class="reasonbox">
+			<span id="p16line1">#5</span><span id="p16line2">Tell a Friend...The more people that know, the more that can help!</span>
+		</div>
+		<div class="scenebox">
+			<img id="arrow5" src="/assets/arrow.png">
+			<div class="scbxbkgd">
+				<img id="wangari2" src="/assets/Wangari.png">
+				<img id="jaques2" src="/assets/jaquescousteau.png">
+				<img id="chico2" src="/assets/chicomendes.png">
+				<img id="teddy2" src="/assets/teddyroosevelt.png">
+				<img id="rachel2" src="/assets/rachelcarsonbook.png">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page 17 -->
+	<div id="page17">
+		<img id="chico4" src="">
+		<div id="speechbubble3">
+			<h2 id="p17line1">How will you help?</h2>
+		</div>
+		<div id="inputbx">
+			 <%= render :partial => "writtenresponses/new" %>
+		</div>
+	</div>
+
+	<!-- Page 18 -->
+	<div id="page18">
+		<div id="thanks">
+			<h2 id="p18line1">Thanks for doing your part!</h2>
+			<h2 id="p18line2">See you next time <span id="guardian">guardian..</span></h2>
+		</div>
+		<div class="finish">
+				<h1><%= link_to "Finish!", completion_path(@lesson), method: :create, :class =>"play-btn" %></h1>
+			</div>
+		</div>
+	</div>

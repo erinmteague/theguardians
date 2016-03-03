@@ -9,6 +9,9 @@ $ink: #2A313D;
  $hand: 'Coming Soon', cursive;
  $lt-grn: #CFEA96;
 
+#hidefornow{
+	display: none;
+}
 // lesson index
 .flag{
 	position: relative;
@@ -114,4 +117,244 @@ $ink: #2A313D;
 	background: $lt-grn;
 	border: 2px outset green;
 	border-radius: 1em;
+}
+
+// disappearing frogs
+/* Initial Sizing */
+#page11, #page12, #page13, #page14, #page15, #page16, #page17, #page18{
+	width: 102%;
+	height: 755px;
+	display: none;
+}
+nav{
+	width: 101%;
+	height: 125px;
+	background-color: #1CDB7F;
+	margin-bottom: -21px;
+	margin-left: -10px;
+	margin-top: -10px;
+	border-bottom: 5px outset #20F78F;
+}
+footer {
+	width: 101%;
+	height: 80px;
+	background-color: #138275;
+	margin-left: -10px;
+	border-top: 2px ridge #0F665B;
+	z-index: 3;
+}
+#videopage{
+	width: 102%;
+	height: 755px;
+	background: antiquewhite;	
+	margin-left: -1%;	
+}
+
+/*video page*/
+.video{
+	margin-left: 15%;
+	padding-top: 4%;
+}
+#arrow1{
+	display: none;
+	margin-left: 87%;
+}
+
+/* page 11 */
+#myname{
+	width: 46%;
+}
+#p11line1{
+	margin-top: 1%;
+	padding-top: 1%;
+	display: none;
+	width: 79%;
+	font-size: 67px;
+  margin-left: 5%;
+}
+#name{
+	font-size: 105px;
+}
+#chico1{
+	display: none;
+	width: 15%;
+	margin-left: 46%;
+	margin-top: -14%;
+}
+#bottomtxt{
+	display: none;
+	margin-left: 64%;
+  margin-top: -9%;
+  font-size: 55px;
+  width: 25%;
+  text-align: center;
+}
+
+/* page 12, 13, 14, 15 16 */
+#p12line1, #p13line1, #p14line1, #p15line1, #p16line1{
+	display: none;
+	font-size: 105px;
+}
+#p12line2, #p13line2, #p14line2, #p15line2, #p16line2{
+	display: none;
+	font-size: 45px;
+	margin-left: 1%;
+}
+
+/*page 12*/
+#p12line1{
+	margin-left: -50%;
+}
+#arrow2{
+	display: none;
+	position: relative;
+	z-index: 5;
+	left: 83%;
+	margin-bottom: 1%;
+}
+#sickfrog{
+	position: relative;
+	display: none;
+	left: 50%;
+	z-index: 4;
+}
+#lawn1{
+	position: relative;
+	display: none;
+	z-index: 3;
+	width: 50%;
+	margin-top: 353px;
+  margin-left: -610px;
+}
+#lawn2{
+	position: relative;
+	display: none;
+	z-index: 3;
+	width: 49%;
+	float: left;
+	margin-top: -206px;
+ 	margin-left: 823px;
+}
+#pesticides{
+	position: relative;
+	display: none;
+	z-index: 5;
+	left: -3%;
+}
+
+/*page 13*/
+#p13line1{
+	margin-left: -35%;
+	padding-top: 2%;
+}
+#p13bx{
+	display: none; 
+	margin-top: 8%;
+}
+#arrow3{
+	position: relative;
+	left: 79%;
+	display: none;
+}
+#openhands{
+	position: relative;
+	z-index: 4;
+	left: 26%;
+}
+#frog1{
+	position: relative;
+	top: -89px;
+  left: -3%;
+  z-index: 5;
+}
+#x{
+	position: relative;
+	z-index: 6;
+  left: -25%;
+  top: -26px;
+  width: 24%;
+}
+// page 14
+#page14{
+	background: url('/assets/lake.jpg') no-repeat center center;
+	background-size: cover;
+}
+#reasonbox{
+	color: white;
+	width: 50%;
+	margin-left: 19%;
+}
+#p14line1{
+	margin-left: -92%;
+}
+#trash5{
+	display: none;
+	position: relative;
+	left: 55%;
+  transform: rotate(-75deg);
+  top: 300px;
+}
+#trash6{
+	display: none;
+	position: relative;
+	left: 14%;
+	top: 457px;
+  transform: rotate(-20deg);
+}
+
+// page 15
+#p15line1{
+	margin-left: -28%;
+}
+#arrow4{
+	display: none;
+	position: relative;
+	left: 83%;
+}
+#pond5{
+	position: relative;
+	display: none;
+	width: 43%;
+  margin-top: -4%;
+  margin-left: 3%;
+}
+#frog6{
+	position: relative;
+	display: none;
+  left: -37%;
+  top: -109px;
+}
+
+// page 16
+#p16line1{
+	margin-left: -49%;
+}
+#chico2, #teddy2, #wangari2, #rachel2, #jaques2{
+	display: none;
+}
+#wangari2{
+	margin-left: 20%;
+	margin-top: 2%;
+}
+#arrow5{
+	position: relative;
+	top: 476px;
+	left: 86%;
+}
+#arrow5{
+	display: none;
+}
+
+// page 17
+#p17line1{
+	margin-left: -1%;
+  padding-top: 11%;
+  width: 40%;
+  font-size: 84px;
+  text-align: center;
+}
+#inputbx{
+	display: none;
+  margin-left: 51%;
+  margin-top: -13%;
 }

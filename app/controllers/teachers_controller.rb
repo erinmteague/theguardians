@@ -9,6 +9,7 @@ class TeachersController < ApplicationController
     @teacher = current_teacher
     @classroom = Classroom.new
     @classrooms = Classroom.where(teacher_id: params[:id])
+    @ecofact = EcoFact.all.sample
     render :layout => 'app2'
   end
 
